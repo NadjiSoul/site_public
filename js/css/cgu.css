@@ -1,0 +1,15 @@
+#return{
+	width: 35px;
+}
+
+#list{
+	background-image: url('../img/lang.svg');
+	background-repeat: no-repeat;
+	width: 70px;
+	height: 40px;
+}
+
+#display_return_list{
+	display: flex;
+	justify-content: space-between;
+}

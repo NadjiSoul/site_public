@@ -1,0 +1,41 @@
+main{
+	background-color: #FFF;
+	color: #000;
+}
+nav ul{
+	background-color: black;
+}
+
+nav li a {
+	color: grey;
+}
+
+nav li ul {
+	background-color: #000;
+}
+nav li ul li:hover{
+	background-color: grey;
+}
+
+.article{
+	background-color: #000;
+	color: #FFF;
+}
+
+.article a{
+	background-color: #FFF;
+	color: #000;
+}
+
+.white{
+	background-color: white;
+	border: 3px solid black;
+	border-bottom: none;
+}
+.white a{
+	color: #000;
+}
+
+.circle_color{
+	background-color: #000;
+}

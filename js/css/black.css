@@ -1,0 +1,49 @@
+main{
+	background-color: #000;
+	color: #FFF;
+}
+
+nav ul{
+	background-color: #FFF;
+}
+
+nav li a {
+	color: #000;
+}
+
+nav li ul {
+	background-color: #000;
+}
+nav li ul li{
+	background-color: #FFF;
+}
+nav li ul li:hover{
+	background-color: black;
+}
+nav li ul li a{
+	width: 100%;
+}
+nav li ul li:hover a{
+	color: #FFF;
+}
+
+.article{
+	background-color: #FFF;
+	color: #000;
+}
+.article a{
+	border: 2px solid black;
+}
+
+.black{
+	background-color: black;
+	border: 3px solid white;
+	border-bottom: none;
+}
+.black a{
+	color: #FFF;
+}
+
+.circle_color{
+	background-color: #FFF;
+}

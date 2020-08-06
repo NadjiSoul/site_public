@@ -1,0 +1,493 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+#title{
+	margin: 15vh 0 0 40%;
+	width: 20%;
+	color: #FFF;
+	font-size: 40px;
+	position: absolute;
+	z-index: 1;
+	text-align: center;
+	transition-duration: 1s;
+}
+/*#title:hover .title_focus_a{
+	font-size: 70px;
+	transition-duration: 1s;
+}
+#title:hover .title_focus_b{
+	font-size: 30px;
+	transition-duration: 1s;
+}*/
+
+#title .fa-phoenix-framework{
+	transition-duration: 1s;
+	cursor: pointer;
+	color: #FFF;
+}
+#title:hover .fa-phoenix-framework{
+	font-size: 50px;
+	color: orange;
+	transition-duration: 1s;	
+}
+#title > div{
+	display: flex;
+	justify-content: center;
+}
+#title > div > h1{
+	border-bottom: 1px solid #FFF;
+	font-size: 20px;
+	transition-duration: 1s;
+}
+#title > h2{
+	font-size: 60px;
+	transition-duration: 1s;
+}
+.backchild{
+	width: 100%;
+	height: 50vh;
+	background-color: black;
+	opacity: .5;
+}
+footer > div {
+	position: relative;
+	z-index: 1;
+}
+.backchild-footer{
+	position: absolute;
+	height: 150px;
+}
+#nav_responsive{
+	display: none;
+}
+nav{
+	width: 100%;
+	position: sticky;
+	/* A VERIFIER SUR FIREFOX */
+	top: -1px;
+	z-index: 1000;
+}
+nav ul{
+	display: flex;
+}
+nav li{
+	padding: 20px 10px;
+	float: left;
+	cursor: pointer;
+	list-style: none;
+}
+
+nav > ul > li > a {
+	text-decoration: none;
+	padding: 10px 15px;
+}
+
+nav li ul {
+	display:none;
+	position: absolute;
+	z-index: 1000;
+}
+nav li:hover ul {
+	display:block;
+}
+nav li:hover ul li {
+	float:none;
+}
+article {
+	padding: 10px;
+	margin: auto;
+	width: 95%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.article{
+	padding: 20px;
+	width: 180px;
+	height: 180px;
+	margin: .5%;
+	border-radius: 5px;
+}
+/*A VOIR */
+.article img{
+	max-width: 100%;
+	max-height: 150px;
+}
+.article a{
+	cursor: pointer;
+	border-radius: 4px;
+	padding: 5px;
+}
+.connect{
+	background-color: darkgrey;
+	position: absolute;
+	right: 0;
+}
+.connect:hover{
+	background-color: grey;
+}
+.disconnect{
+	background-color: red;
+}
+.disconnect:hover{
+	background-color: darkred;
+}
+
+#footer, #info{
+	display: flex;
+}
+#footer{
+	padding: 20px;
+}
+
+#footer ul{
+	width: calc(100% / 2);
+}
+
+#footer ul li, #info ul li{
+	list-style: none;
+	text-align: center;
+}
+.network{
+	display: flex;
+}
+.network > li > a > i{
+	font-size: 40px;
+	height: 40px;
+	margin: 10px;
+	color: #FFF;
+	transition-duration: 0.2s;
+}
+.network > li > a > i:hover{
+	font-size: 45px;
+	transition-duration: 0.2s;
+}
+#info ul{
+	display: flex;
+	margin: auto;
+}
+#info ul li{
+	padding: 5px;
+}
+
+#info a:hover {
+	text-decoration: underline;
+}
+.boxdraw{
+	margin: auto;
+	width: 95%;
+}
+.draw{
+ display : inline-block;
+ height : 0;
+ width : 0;
+ border-right : 10px solid transparent;
+ border-bottom : 10px solid red;
+}
+
+.black{
+	background-color: #000;
+}
+
+
+#post{
+	border: 2px solid red;
+}
+
+#post > div {
+	border: 2px solid red;
+	padding: 10px;
+	margin: 10px;
+}
+
+#aw{
+	width: 100%;
+	height: 20vh;
+	background-image: url("../img/back.jpeg");
+	background-size: cover;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+#aw > h2{
+	width: 150px;
+	color: #FFF;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	text-align: center;
+	position: absolute;
+	left: calc(50% - 75px);
+	margin-top: 7.5vh;
+}
+button[name=modify],button[name=delete], button[name=add],.button_connect{
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	color: #FFF;
+
+}
+button[name=modify]{
+	background-color: blue;
+}
+button[name=delete]{
+	background-color: red;
+}
+button[name=add],.button_connect{
+	background-color: orange;
+}
+
+.main_account{
+	padding: 20px;
+}
+#form_account{
+	margin: 0 0 30px calc(50% - 300px);
+	padding: 50px 30px;
+	width: 600px;
+	border: 2px solid #000;
+	border-radius: 5px;
+	display: flex;
+	justify-content: space-between;
+}
+#form_account img{
+	width: 200px;
+	border: 2px solid black;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.fa-user{
+	font-size: 200px;
+	margin-left: 30px;
+}
+#form_account div{
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	justify-content: end;
+}
+
+#form_account div input[type=text],#form_contact input[type=text]{
+	padding: 5px 2px;
+	margin: 5px 0;
+}
+#form_account div button[type=submit], #form_contact button[type=submit]{
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	background-color: blue;
+	color: #FFF;
+	width: 100px;
+}
+
+#form_contact{
+	display: flex;
+	flex-direction: column;
+	border-radius: 5px;
+	width: 50%;
+	margin: auto;
+}
+#form_contact > div{
+	display: flex;
+	padding: 50px;
+	background-color: #FFF;
+	border-radius: 5px;
+}
+#form_contact > div > div{
+	display: flex;
+	flex-direction: column;
+}
+#form_contact button[type=submit]{
+	margin: 10px auto;
+}
+
+#form_contact span{
+	color: red;
+}
+.data{
+	width: 30%;
+}
+.message{
+	width: 70%;
+	padding: 0 10px;
+}
+.message input[type=text]{
+	width: 50%;
+}
+.message textarea{
+	width: 100%;
+	height: 200px;
+	resize: none;
+	padding: 10px;
+}
+main#tod{
+	background-image: url("../img/tod.jpg");
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+	z-index: 1;
+}
+
+main#tod .tod{
+	background-color: black;
+	opacity: 0.8;
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	z-index: -1;
+}
+
+#contacth2{
+	color: white;
+	padding: 50px;
+	text-align: center;
+	font-size: 30px;
+}
+
+#form_contact label{
+	padding: 2.5px;
+}
+
+#form_contact *{
+	color: black;
+}
+
+.table{
+	border-collapse: collapse;
+}
+
+table, td{
+	border: 1px solid #000;
+}
+
+td{
+	width: 300px;
+	overflow: hidden;
+	padding: 10px;
+}
+
+
+.button_artwork_table button{
+	padding: 7px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.delete{
+	background-color: red;
+}
+.delete:hover{
+	background-color: darkred;
+}
+
+.show{
+	background-color: orange;
+}
+.show:hover{
+	background-color: darkorange;
+}
+
+
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+
+.blue_exorcist{
+	background-image: url('../img/blue.png');
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: -1;
+}
+
+.white, .black{
+	margin-top: -13px;
+}
+
+#info a{
+	color: #FFF;
+	text-decoration: none;
+}
+footer{
+	color: #FFF;
+}
+
+#dialog{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 1000;
+	background-color: rgba(0,0,0,0.9);
+	display: none;
+}
+
+.dial{
+	width: 400px;
+	height: 100px;
+	padding: 20px;
+	border: 2px solid red;
+	background-color: #FFF;
+	margin: auto;
+	margin-top: calc(25% - 110px);
+	color: black;
+}
+
+.dial button{
+	padding: 10px 25px;
+	border: none;
+}
+
+.dial div{
+	padding: 10px;
+	margin: auto;
+	width: 40%;
+	display: flex;
+	justify-content: space-between;
+}
+.cancel{
+	background-color: darkgrey;
+}
+.cancel:hover{
+	background-color: grey;
+}
+
+.fa-sun, .fa-moon{
+	margin-top: 10px;
+}
+.fa-envelope:hover, .fa-moon:hover, .fa-sun:hover,li:hover .focus{
+	color: orange;
+}
+.focuss:hover{
+	background-color: orange;
+	color: #FFF;
+}
+.focuss{
+	display: block;
+	text-align: center;
+	padding: 15px;
+}
+.focuss_li{
+	padding: 0;
+}
+.cnx{
+	color:#000;
+}
+.mailto a{
+	text-decoration: none;
+	color: #FFF;
+}
+.mailto a:hover{
+	color: orange;
+}
+.mailto i{
+	padding: 5px;
+}
+

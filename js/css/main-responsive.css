@@ -1,0 +1,29 @@
+
+/* TABLETTE */
+@media screen and (max-width: 1000px){
+	nav{
+		display: none;
+	}
+}
+
+/* MOBILE */
+@media screen and (max-width: 700px){
+	#nav_responsive{
+		display: block;
+	}
+	header, .blue_exorcist, #article img{
+		display: none;
+	}
+	#article{
+		display: flex;
+		flex-direction: column;
+	}
+	.article{
+		width: 90%;
+		height: 10px;
+		display: flex;
+	}
+	.article a{
+		height: 15px;
+	}
+}
